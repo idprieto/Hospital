@@ -6,5 +6,5 @@ class Director < User
 
   validates :description, presence: true
 
-  has_one :management
+  belongs_to :management
 end

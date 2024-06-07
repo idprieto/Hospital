@@ -22,5 +22,5 @@ class Patient
 
   has_many :prescriptions
   has_many :medical_orders
-  belongs_to :medical_history
+  has_one :medical_history
 end

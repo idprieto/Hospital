@@ -14,6 +14,6 @@ class Headquarter
   validates :department, presence: true
   validates :city, presence: true
 
-  belongs_to :manager
+  has_one :manager
   has_many :managements
 end

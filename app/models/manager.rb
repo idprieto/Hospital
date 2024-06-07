@@ -6,5 +6,5 @@ class Manager < User
 
   validates :description, presence: true
 
-  has_one :headquarter
+  belongs_to :headquarter
 end

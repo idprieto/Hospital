@@ -8,7 +8,7 @@ class Management
   validates :name, presence: true
   validates :functions, presence: true
 
-  belongs_to :director
+  has_one :director
   belongs_to :headquarter
   has_many :sub_areas
 end

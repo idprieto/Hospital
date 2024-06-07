@@ -12,7 +12,7 @@ class MedicalHistory
   validates :addictions, presence: true
   validates :observations, presence: true
 
-  has_one :patient
+  belongs_to :patient
   has_and_belongs_to_many :allergys
   has_and_belongs_to_many :diseases
   has_and_belongs_to_many :operations
