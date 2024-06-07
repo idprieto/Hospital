@@ -3,7 +3,7 @@ class Management
   include Mongoid::Timestamps
 
   field :name, type: String
-  field :functions, type: String
+  field :functions, type: Array
 
   validates :name, presence: true
   validates :functions, presence: true

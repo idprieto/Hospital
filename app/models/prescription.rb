@@ -2,7 +2,7 @@ class Prescription
   include Mongoid::Document
   include Mongoid::Timestamps
 
-  field :date, type: Date
+  field :date, type: DateTime
   field :description, type: String
 
   validates :date, presence: true 

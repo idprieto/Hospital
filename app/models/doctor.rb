@@ -7,7 +7,7 @@ class Doctor < User
   validates :description, presence: true
 
   belongs_to :sub_area
-  has_and_belongs_to_many :specialization
+  has_and_belongs_to_many :specializations
   has_many :medical_orders
   has_many :prescriptions
 end
